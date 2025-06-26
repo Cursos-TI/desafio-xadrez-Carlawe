@@ -8,8 +8,8 @@ int cavalo = 0;
                         //Torre: Andar 5 casas pra frente.
 
 
-for( int torre = 0 ;  torre < 5; torre++){ // enquanto torre for menor que 5 acrescente 1.
-   printf("Direita\n");
+for( int torre = 0 ;  torre < 5; torre++){ // enquanto torre for menor que 5 acrescente 1 passo.
+   printf("Direita\n");                    // imprimir direita 5 vezes
       
 }
 
@@ -35,15 +35,17 @@ do {
      printf("\n");
 
                             //Movimento do cavalo
-for (int cavalo = 0; cavalo < 2; cavalo++){  //enquanto cavalo for menor que 2, acresente 1 passo.
-    printf("Baixo\n");                       //imprima baixo duas vezes
-
-
-}do {
-    printf("Esquerda\n"); //imprima esquerda enquanto cavalo for menor que 1.
-    cavalo++;
-}while( cavalo < 1);
+                       
+while (cavalo < 1){
+      for (int cavalo = 0; cavalo < 2; cavalo++){ //enquanto cavalo for menor que 2, acresente 1 passo.
+            printf("Baixo\n");  //imprima baixo duas vezes
+             }
+     
+             printf("Esquerda\n"); //imprima esquerda enquanto cavalo for menor que 1.
+             cavalo++;
       
+            }
+    
 return 0;
 
 

@@ -12,14 +12,18 @@
      
    
               //Movimento do Bispo
-void moverBispo(int casas){
-      if (casas >  0){              //caso base
-        printf("Cima, direita\n");  
-        moverBispo (casas - 1);     
-     }
+ void moverBispo(int casas ){
+    while ( casas > 0){
+        for( int casas = 0; casas  < 1; casas++ ){
+          printf("Cima\n");
+        }
+        printf("Direita\n");
+        casas--;
+      }
     }
-
-
+  
+     
+  
              // Movimento da Rainha
 void moverRainha(int casas) {
     if( casas > 0){             //Caso base
@@ -38,21 +42,23 @@ int main(){
     moverRainha(8);  // Quantidade de vezes que a rainha vai se mover
     printf("\n");    // pular linha
 
-    int cavalo = 0;         
+  
+                           //Movimento do cavalo
+
+ 
+   
+   int passos = 0;  // criação da variável passos para o loop while
+                          
+   while (passos < 1){               //enquanto a variável  passos for menor que 1 imprime o codigo todo por uma vez                 
+                                 
+       for (int cavalo = 0; cavalo < 2; cavalo++){     //imprimir cima duas vezes enquanto  a variável cavalo for menor que dois incrementando 1.                          
+        
+        printf("Cima\n");
+        }
+         printf("Direita\n");  
+        passos++;
+        }
     
-                          //Movimento do cavalo
-
-  while (cavalo < 1){
-      for (int cavalo = 0; cavalo < 2; cavalo++){ //enquanto cavalo for menor que 2, acresente 1 passo.
-            printf("Cima\n");  //imprima cima duas vezes
-             }
-     
-             printf("Direita\n"); //imprima direita enquanto cavalo for menor que 1.
-             cavalo++;
-      
-            } 
-    
-    return 0;
-
-}
-
+  return 0;
+} 
+            
